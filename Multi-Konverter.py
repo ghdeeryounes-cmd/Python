@@ -15,10 +15,10 @@ def unit_converter():
             
             if einheit == "C":
                 fahrenheit = (temp * 9/5) + 32
-                print(f" {temp}°C = {fahrenheit:.1f}°F")
+                print(f" {temp}C = {fahrenheit:.1f}F")
             elif einheit == "F":
                 celsius = (temp - 32) * 5/9
-                print(f" {temp}°F = {celsius:.1f}°C")
+                print(f" {temp}F = {celsius:.1f}C")
                 
         elif choice == "2":
             print("\n Währungs-Konverter")
