@@ -1,7 +1,7 @@
 def unit_converter():
     while True:
         print("\n Multi-Konverter")
-        print("1. Temperatur")
+        print("1. Temperatur" )
         print("2. Währung (EUR to USD)")
         print("3. Gewicht")
         print("4. Beenden")
@@ -11,7 +11,7 @@ def unit_converter():
         if choice == "1":
             print("\n Temperatur-Konverter")
             temp = float(input("Temperatur: "))
-            einheit = input("Von (C/F): ").upper()
+            einheit = input("Von (C/F ): ").upper()
             
             if einheit == "C":
                 fahrenheit = (temp * 9/5) + 32
@@ -23,12 +23,12 @@ def unit_converter():
         elif choice == "2":
             print("\n Währungs-Konverter")
             euro = float(input("Euro Betrag: "))
-            usd = euro * 1.07  # Aktueller Wechselkurs
+            usd = euro * 1.07  
             print(f" {euro}€ = {usd:.2f}$")
             
         elif choice == "3":
             print("\n Gewichts-Konverter")
-            kg = float(input("Kilogramm: "))
+            kg = float( input ("Kilogramm: "))
             pound = kg * 2.20462
             print(f" {kg} kg = {pound:.2f} lb")
             
