@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Cola",
+    "preis": 5.0,
+    "menge": 1
+  },
+  {
+    "name": "Burger",
+    "preis": 6.0,
+    "menge": 1
+  }
+]
