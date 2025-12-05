@@ -5,12 +5,12 @@ def load_questions():
         {
             "frage": "Was ist die Hauptstadt von Deutschland?",
             "optionen": ["A: Berlin", "B: München", "C: Hamburg"],
-            "antwort ": "A"
+            "antwort": "A"
         },
         {
             "frage": "Welche Sprache wird in Brasilien gesprochen?",
             "optionen": ["A: Spanisch", "B: Portugiesisch", "C: Englisch"],
-            "antwort ": "B"
+            "antwort": "B"
         },
         {
             "frage": "Wie viele Bits hat ein Byte?",
