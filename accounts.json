@@ -1,1 +1,1 @@
-{"2": {"balance": 100.0, "transactions": ["Einzahlung: +100.0\u20ac"]}}
+{"2": {"balance": 102.0, "transactions": ["Einzahlung: +100.0\u20ac", "Einzahlung: +12.0\u20ac", "Einzahlung: +2.0\u20ac", "Auszahlung: -12.0\u20ac"]}, "3": {"balance": 12.0, "transactions": ["Einzahlung: +12.0\u20ac"]}}
