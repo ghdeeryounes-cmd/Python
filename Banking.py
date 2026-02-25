@@ -36,25 +36,33 @@ def banking_system():
         elif choice == "2":
             konto_nr = input("Kontonummer: ")
             if konto_nr in accounts:
-                betrag = float(input("Betrag: "))
-                accounts[konto_nr]["balance"] += betrag
-                accounts[konto_nr]["transactions"].append(f"Einzahlung: +{betrag}€")
-                save_accounts(accounts)
-                print(" Einzahlung erfolgreich!")
+                betrag = (input("Betrag: "))
+                if betrag.isdigit():
+                 betrag = float(betrag)
+                 accounts[konto_nr]["balance"] += betrag
+                 accounts[konto_nr]["transactions"].append(f"Einzahlung: +{betrag}€")
+                 save_accounts(accounts)
+                 print(" Einzahlung erfolgreich!")
+                else: 
+                    print("Bitte! Gib einen gültigen Wert ein !")
             else:
                 print(" Konto nicht gefunden!")
                 
         elif choice == "3":
             konto_nr = input("Kontonummer: ")
             if konto_nr in accounts:
-                betrag = float(input("Betrag: "))
-                if betrag <= accounts[konto_nr]["balance"]:
+                betrag = (input("Betrag: "))
+                if betrag.isdigit():
+                 betrag = float(betrag)
+                 if betrag <= accounts[konto_nr]["balance"]:
                     accounts[konto_nr]["balance"] -= betrag
                     accounts[konto_nr]["transactions"].append(f"Auszahlung: -{betrag}€")
                     save_accounts(accounts)
                     print(" Auszahlung erfolgreich!")
-                else:
+                 else:
                     print(" Nicht genug Geld!")
+                else :
+                    print("Bitte! Gib einen gültigen Wert ein !")
             else:
                 print(" Konto nicht gefunden!")
                 
